@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="th">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>ศูนย์ให้คำปรึกษาทางจิตสังคม</title>
+        <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="styles.css">
+        <script src="script.js" defer></script>
+    </head>
+<body>
+    <header>
+        <img src="images/sarn.png" alt="โลโก้ศาลอาญากรุงเทพใต้" class="logo">
+        <h1>คลินิกให้คำปรึกษาด้านจิตสังคม</h1>
+        <h2>Psychological Counseling Center</h2>
+    </header>
+
+    <main>
+        <div class="hero">
+            <img src="images/laptop.jpg" alt="ภาพมือพิมพ์บนแล็ปท็อป">
+        </div>
+
+        <div class="buttons">
+            <button id="btn-eval">
+                <img src="icons/evaluation.jpeg" alt="แบบประเมินผู้ใช้บริการ"> แบบประเมินผู้ใช้บริการ
+            </button><br>
+            <button id="btn-about">
+                <img src="icons/about.jpg" alt="เกี่ยวกับคลินิก"> คลินิกคืออะไร?
+            </button><br>
+            <button id="btn-stats">
+                <img src="icons/stats.jpg" alt="สถิติ"> กราฟสถิติ
+            </button>
+        </div>
+    </main>
+
+    <footer>
+    </footer>
+
+    <script>
+        document.getElementById('btn-eval').addEventListener('click', () => {
+            window.location.href = 'evaluation.html';
+        });
+        document.getElementById('btn-about').addEventListener('click', () => {
+            window.location.href = 'about.html';
+        });
+        document.getElementById('btn-stats').addEventListener('click', () => {
+            window.location.href = 'stats2.html';
+        });
+    </script>
+</body>
+</html>
