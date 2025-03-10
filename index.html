@@ -7,6 +7,33 @@
         <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="styles.css">
         <script src="script.js" defer></script>
+
+        <style>
+            .marquee-box {
+                background-color: red;
+                color: white;
+                padding: 10px 0;
+                width: 100%;
+                overflow: hidden;
+                position: relative;
+                white-space: nowrap;
+                font-size: 14px;
+                text-align: center;
+            }
+            .marquee-text {
+                display: inline-block;
+                padding-left: 100%;
+                animation: marquee 30s linear infinite; /* ปรับความเร็วให้ช้าลง */
+            }
+            @keyframes marquee {
+                from {
+                    transform: translateX(0%);
+                }
+                to {
+                    transform: translateX(-100%);
+                }
+            }
+        </style>
     </head>
 <body>
     <header>
@@ -14,6 +41,13 @@
         <h1>คลินิกให้คำปรึกษาด้านจิตสังคม</h1>
         <h2>Psychological Counseling Center</h2>
     </header>
+
+    <!-- แถบข้อความเลื่อน -->
+    <div class="marquee-box">
+        <span class="marquee-text">
+            เว็บไซต์นี้จัดทำขึ้นเพื่อเป็นโครงการของนักศึกษาฝึกประสบการณ์วิชาชีพ มหาวิทยาลัยธรรมศาสตร์ ข้อมูลของท่านจะได้รับการปกป้อง และเก็บเป็นความลับ
+        </span>
+    </div>
 
     <main>
         <div class="hero">
